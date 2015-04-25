@@ -76,7 +76,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\Users\Public\Documents\boost\boost_1_57_0\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Public\Documents\boost\boost_1_57_0\lib32-msvc-11.0</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
