@@ -3,8 +3,6 @@
 #include <string>
 #include <boost/filesystem.hpp>
 #include <boost/property_tree/ptree.hpp>
-#include <boost/property_tree/xml_parser.hpp>
-
 using namespace std;
 using namespace boost::filesystem;
 using boost::property_tree::ptree;
@@ -24,17 +22,17 @@ void c(path p, ptree &pt) {
 		}
 	}
 }
-ptree s() {cout << "Enter your path" << endl;
+ path main_path_get(){
+	cout << "Enter your path" << endl;
+ 	path p;
+ 	string s;
+ 	getline(cin, s);
+ 	return p;
+ }
 ptree pt;
 ptree files_array;
-path pk;
-string s1;
-getline(cin, s1);
-pk = s1;
-
-c(pk, files_array);
-
-pt.add_child("Path(" + pk.string() + ")Files", files_array);
+c(main_path_get, files_array);
+pt.add_child("Path(" + main_pah_get.string() + ")Files", files_array);
 return pt;
 }
 int main() {
